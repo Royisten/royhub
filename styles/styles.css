@@ -54,4 +54,9 @@ section {
   transform: translateY(-100%);
   transition: all 0.4s ease-in;
   background-color: var(--color-primary);
+}
+
+.sec1 {
+  display: none;
+  transform: translateY(0) scale(1);
 }/*# sourceMappingURL=styles.css.map */

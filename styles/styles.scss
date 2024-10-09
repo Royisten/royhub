@@ -52,3 +52,7 @@ section{
     transition: all .4s ease-in;
     background-color:  var(--color-primary);
 }
+.sec1{
+    display: none;
+    transform: translateY(0) scale(1);
+}
