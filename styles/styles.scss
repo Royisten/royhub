@@ -8,12 +8,12 @@
 
 :root {
     --color-primary: #191d2b;
-    --color-secondary: #27a0ae;
+    --color-secondary: #52d7e5;
     --color-white: #ffffff;
     --color-black: #000;
     --color-grey0: #f8f8f8;
     --color-grey-1: #dbe1e8;
-    --color-grey-2: #b2becd;
+    --color-grey-2: #76a3d8;
     --color-grey-3: #6c7983;
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
@@ -75,6 +75,14 @@ section {
     justify-content: center;
     transform: translateY(-50%);
 
+    .active-btn {
+        background-color: var(--color-secondary) !important;
+        transition: all .4s ease-in-out;
+        i{
+            color: var(--color-white) !important;
+        }
+    }
+
     .control {
         padding: 1rem;
         cursor: pointer;
@@ -87,5 +95,11 @@ section {
         align-items: center;
         margin: .7rem 0;
         box-shadow: var(--box-shadow-1);
+
+        i {
+            font-size: 1.2rem;
+            color: var(--color-grey-2);
+            pointer-events: none;
+        }
     }
 }
