@@ -31,7 +31,7 @@ header {
 }
 
 .bn16:hover {
-    background-color: #007BFF;
+    background-color: rgb(0, 123, 255);
 }
 
 .bn16 i {
@@ -103,7 +103,7 @@ header {
     z-index: -1;
     border-radius: 4px;
     transform: translateY(0%);
-    background-color: #05c0ff;
+    background-color:rgb(0, 123, 255);
     border: solid 1px #01e0572d;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
