@@ -13,79 +13,30 @@ header {
     padding: 20px;
 }
 
-.download-button {
+/* Styling for project GitHub buttons */
+.bn16 {
+    font-family: lato, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 40px;
     position: relative;
-    border-width: 0;
-    color: rgb(250, 247, 247);
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 4px;
-    z-index: 1;
-  }
-  
-  .download-button .docs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    min-height: 45px;
-    padding: 0 10px;
-    border-radius: 4px;
-    z-index: 1;
-    background-color: #0b0b0b;
-    border: solid 1px #e8e8e82d;
-    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  }
-  
-  .download-button:hover {
-    box-shadow:
-      rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px,
-      rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px,
-      rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-  
-  .download {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 90%;
-    margin: 0 auto;
-    z-index: -1;
-    border-radius: 4px;
-    transform: translateY(0%);
-    background-color: #05c0ff;
-    border: solid 1px #01e0572d;
-    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  }
-  
-  .download-button:hover .download {
-    transform: translateY(100%);
-  }
-  
-  .download svg polyline,
-  .download svg line {
-    animation: docs 1s infinite;
-  }
-  
-  @keyframes docs {
-    0% {
-      transform: translateY(0%);
-    }
-  
-    50% {
-      transform: translateY(-15%);
-    }
-  
-    100% {
-      transform: translateY(0%);
-    }
-  }
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    background-color: #333;
+    transition: background-color 0.3s;
+}
 
+.bn16:hover {
+    background-color: #007BFF;
+}
+
+.bn16 i {
+    margin-right: 10px; /* Adds space between the icon and text */
+}
 
 #projects, #contacts {
     margin-top: 20px;
@@ -107,3 +58,75 @@ header {
     color: #007BFF;
 }
 
+/* Download button styles */
+.download-button {
+    position: relative;
+    border-width: 0;
+    color: rgb(250, 247, 247);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.download-button .docs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 45px;
+    padding: 0 10px;
+    border-radius: 4px;
+    z-index: 1;
+    background-color: #0b0b0b;
+    border: solid 1px #e8e8e82d;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+    border-radius: 4px;
+    transform: translateY(0%);
+    background-color: #05c0ff;
+    border: solid 1px #01e0572d;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover .download {
+    transform: translateY(100%);
+}
+
+.download svg polyline,
+.download svg line {
+    animation: docs 1s infinite;
+}
+
+@keyframes docs {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-15%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
