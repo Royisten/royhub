@@ -4,24 +4,108 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px;
-    background-color: #fffcfc;
+    background-color: #f0f4f8;
+    color: #070707;
 }
 
+/* Header Styling */
 .header {
-    
-    background-color: #fefffe;
-    color: rgb(15, 15, 15);
-    padding: 35px 12%;
+    text-align: center;
+    padding: 50px 12%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
-/* Styling for project GitHub buttons */
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #030303;
+}
+
+.header h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 15px 0;
+    font-weight: 400;
+    color: #100f0f;
+}
+
+.header h3 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 300;
+    color: #0e0e0e;
+}
+
+/* Responsive Text for Small Screens */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .header h2 {
+        font-size: 1.5rem;
+    }
+
+    .header h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Styling for projects section */
+#projects {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between projects */
+    flex-wrap: wrap; /* Wrap projects to the next line if needed */
+    flex-direction: column; /* Ensure the heading stacks above the projects */
+    align-items: center; /* Center the content horizontally */
+}
+#projects h2 {
+    margin-bottom: 20px; /* Space between heading and project cards */
+}
+
+.projects-container {
+    display: flex; /* Create a container for the project cards */
+    justify-content: center;
+    gap: 20px; /* Space between projects */
+    flex-wrap: wrap; /* Wrap projects to the next line if needed */
+}
+
+.project {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px; /* Fixed width for consistent layout */
+    text-align: center;
+    transition: box-shadow 0.3s;
+    margin-bottom: 15px;
+}
+
+.project:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design: Stack projects vertically on small screens */
+@media (max-width: 600px) {
+    .project {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Styling for GitHub buttons */
 .bn16 {
-    font-family: lato, sans-serif;
-    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
     font-size: 1em;
     letter-spacing: 0.1em;
     text-decoration: none;
-    color: #ffffff;
+    color: #d6cdcd;
     display: inline-block;
     padding: 10px 40px;
     position: relative;
@@ -39,15 +123,7 @@ body {
     margin-right: 10px; /* Adds space between the icon and text */
 }
 
-#projects, #contacts {
-    margin-top: 20px;
-}
-
-.project {
-    margin-bottom: 15px;
-    position: inherit;
-}
-
+/* Styling for social links */
 .social-links a {
     margin: 10px;
     font-size: 30px;
@@ -60,16 +136,17 @@ body {
     color: #007BFF;
 }
 
-/* Download button styles */
+/* Styling for download button */
 .download-button {
     position: relative;
     border-width: 0;
-    color: rgb(250, 247, 247);
+    color: #fff;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     border-radius: 4px;
     z-index: 1;
+    margin-top: 30px;
 }
 
 .download-button .docs {
@@ -81,7 +158,7 @@ body {
     padding: 0 10px;
     border-radius: 4px;
     z-index: 1;
-    background-color: #0b0b0b;
+    background-color: #333;
     border: solid 1px #e8e8e82d;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -105,7 +182,7 @@ body {
     z-index: -1;
     border-radius: 4px;
     transform: translateY(0%);
-    background-color:rgb(0, 123, 255);
+    background-color: rgb(0, 123, 255);
     border: solid 1px #01e0572d;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -123,11 +200,9 @@ body {
     0% {
         transform: translateY(0%);
     }
-
     50% {
         transform: translateY(-15%);
     }
-
     100% {
         transform: translateY(0%);
     }
