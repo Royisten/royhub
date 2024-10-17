@@ -7,10 +7,11 @@ body {
     background-color: #fffcfc;
 }
 
-header {
+.header {
+    
     background-color: #fefffe;
     color: rgb(15, 15, 15);
-    padding: 20px;
+    padding: 35px 12%;
 }
 
 /* Styling for project GitHub buttons */
@@ -44,6 +45,7 @@ header {
 
 .project {
     margin-bottom: 15px;
+    position: inherit;
 }
 
 .social-links a {
