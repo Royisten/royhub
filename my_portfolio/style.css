@@ -4,7 +4,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px;
-    background-color: #f0f4f8;
+    background-color: #d9dde0;
     color: #070707;
 }
 
@@ -14,30 +14,35 @@ body {
     padding: 50px 12%;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
+    border-radius: 5px;
 }
 
 .header h1 {
+    font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     margin-bottom: 10px;
     font-weight: 400;
-    color: #030303;
+    color: #0f0e0e;
 }
 
 .header h2 {
+    font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     line-height: 1.2;
     margin: 15px 0;
     font-weight: 400;
-    color: #100f0f;
+    color: #040404;
 }
 
-.header h3 {
+.header p {
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
     line-height: 1.2;
     max-width: 600px;
     margin: 0 auto;
     font-weight: 300;
     color: #0e0e0e;
+    font-style: italic; 
 }
 
 /* Responsive Text for Small Screens */
@@ -50,8 +55,8 @@ body {
         font-size: 1.5rem;
     }
 
-    .header h3 {
-        font-size: 1rem;
+    .header p {
+        font-size: 1rem; /* Adjust paragraph size for readability */
     }
 }
 
@@ -65,7 +70,14 @@ body {
     flex-direction: column; /* Ensure the heading stacks above the projects */
     align-items: center; /* Center the content horizontally */
 }
+
 #projects h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 15px 0;
+    font-weight: 400;
+    color: #5b5959;
     margin-bottom: 20px; /* Space between heading and project cards */
 }
 
@@ -78,7 +90,7 @@ body {
 
 .project {
     background-color: #ffffff;
-    border: 1px solid #ddd;
+    border: 1px solid #fffefe;
     padding: 20px;
     border-radius: 8px;
     width: 250px; /* Fixed width for consistent layout */
@@ -93,25 +105,30 @@ body {
 
 /* Responsive Design: Stack projects vertically on small screens */
 @media (max-width: 600px) {
+    #projects {
+        flex-direction: column; /* Stack projects vertically */
+        align-items: center; /* Center items */
+    }
+
     .project {
-        width: 100%; /* Full width on smaller screens */
+        width: 90%; /* Full width on smaller screens */
     }
 }
 
 /* Styling for GitHub buttons */
 .bn16 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
-    font-size: 1em;
+    font-size: 0.8rem;
     letter-spacing: 0.1em;
     text-decoration: none;
-    color: #d6cdcd;
+    color: #ffffff;
     display: inline-block;
     padding: 10px 40px;
     position: relative;
     border: 3px solid #ffffff;
     border-radius: 25px;
-    background-color: #333;
+    background-color: #000000;
     transition: background-color 0.3s;
 }
 
@@ -123,17 +140,54 @@ body {
     margin-right: 10px; /* Adds space between the icon and text */
 }
 
-/* Styling for social links */
-.social-links a {
-    margin: 10px;
-    font-size: 30px;
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s;
+.project h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin: 15px 0;
+    font-weight: 400;
+    color: #000000;
 }
 
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin: 15px 0;
+    font-weight: 400;
+    color: #000000;
+}
+
+/* Styling for social links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Each icon wrapped in a circular button */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Makes the button round */
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect: Change color to blue and apply a deeper shadow */
 .social-links a:hover {
-    color: #007BFF;
+    color: #ffffff;
+    background-color: rgb(0, 123, 255);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
 }
 
 /* Styling for download button */
@@ -158,7 +212,7 @@ body {
     padding: 0 10px;
     border-radius: 4px;
     z-index: 1;
-    background-color: #333;
+    background-color: #000000;
     border: solid 1px #e8e8e82d;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -205,5 +259,32 @@ body {
     }
     100% {
         transform: translateY(0%);
+    }
+}
+
+/* Additional media queries for improved mobile responsiveness */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2.5rem; /* Adjusted header font size */
+    }
+
+    .header h2 {
+        font-size: 1.5rem; /* Adjusted subheader font size */
+    }
+
+    .header p {
+        font-size: 1rem; /* Adjusted paragraph font size */
+    }
+
+    .bn16 {
+        width: 80%; /* Make buttons wider */
+        font-size: 0.9em; /* Adjust font size */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .social-links a {
+        width: 50px; /* Smaller button size */
+        height: 50px; /* Smaller button size */
+        font-size: 25px; /* Adjust icon size */
     }
 }
