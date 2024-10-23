@@ -19,6 +19,26 @@ body {
     box-sizing: border-box; /* Ensures padding is included in the total width */
     min-height: 200px; /* Sets a minimum height for visual consistency */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better separation */
+    text-align: center;
+    position: relative; /* Ensures proper stacking of elements */
+}
+.tech-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures icons wrap on smaller screens */
+    gap: 15px;
+}
+
+.tech-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.tech-icons img:hover {
+    transform: scale(1.2);
 }
 
 /* Responsive adjustments with media queries */
@@ -246,23 +266,26 @@ h2 {
     cursor: pointer;
     border-radius: 4px;
     z-index: 1;
-    margin-top: 30px;
+    margin-top: -10px; /* Reduced to move the button higher */
+    transform: scale(0.75); /* Scales the button to 75% */
+    transform-origin: center; /* Keeps it centered while scaling */
 }
 
+/* Inner container of the button */
 .download-button .docs {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
-    min-height: 45px;
-    padding: 0 10px;
+    gap: 8px; /* Slightly reduced spacing for alignment */
+    min-height: 34px; /* Adjusted height */
+    padding: 0 8px; /* Adjusted padding */
     border-radius: 4px;
-    z-index: 1;
     background-color: #000000;
     border: solid 1px #e8e8e82d;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+/* Hover effect for the entire button */
 .download-button:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
                 rgba(0, 0, 0, 0.12) 0px -12px 30px,
@@ -271,6 +294,7 @@ h2 {
                 rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+/* Styling for the animated download layer */
 .download {
     position: absolute;
     inset: 0;
@@ -287,10 +311,12 @@ h2 {
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+/* Move the animated download icon on hover */
 .download-button:hover .download {
     transform: translateY(100%);
 }
 
+/* Animation for the download arrow */
 .download svg polyline,
 .download svg line {
     animation: docs 1s infinite;
@@ -307,6 +333,7 @@ h2 {
         transform: translateY(0%);
     }
 }
+
 
 /* Additional media queries for improved mobile responsiveness */
 @media (max-width: 600px) {
