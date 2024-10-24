@@ -4,7 +4,12 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-image: url('../img/sky01.jpg');
+
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keeps the image static while scrolling */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
     color: #070707;
 }
 /* Header Styling */
@@ -13,12 +18,12 @@ body {
     width: 90%; /* Makes it responsive to smaller screens */
     margin: 0 auto; /* Centers the header horizontally */
     padding: 50px 5%; /* Adds padding to prevent content from touching edges */
-    background-color: #fafafa;
+    background-color: #fafafab7;
     color: rgb(0, 0, 0);
     border-radius: 5px;
     box-sizing: border-box; /* Ensures padding is included in the total width */
     min-height: 200px; /* Sets a minimum height for visual consistency */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better separation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Optional shadow for better separation */
     text-align: center;
     position: relative; /* Ensures proper stacking of elements */
 }
@@ -50,9 +55,9 @@ body {
 
 .header h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 50;
     color: #0f0e0e;
 }
 
@@ -60,7 +65,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     line-height: 1.2;
-    margin: 15px 0;
+    margin-top: -15px;
     font-weight: 200;
     color: #040404;
 }
@@ -94,7 +99,7 @@ body {
     line-height: 1.2;
     margin: 15px 0;
     font-weight: 400;
-    color: #5b5959;
+    color: #030303;
     margin-bottom: 20px; /* Space between heading and project cards */
 }
 #projects h3 {
@@ -154,7 +159,7 @@ body {
 }
 
 .project {
-    background-color: #ffffff;
+    background-color:  #fafafab7;
     border: 1px solid #fffefe;
     padding: 20px;
     border-radius: 8px;
@@ -166,7 +171,7 @@ body {
 }
 
 .project:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive Design: Stack projects vertically on small screens */
@@ -241,18 +246,18 @@ h2 {
     width: 40px;
     height: 40px;
     border-radius: 50%; /* Makes the button round */
-    background-color: #ffffff;
+    background-color:  #fafafa6f;
     color: #000000;
     font-size: 25px;
     text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
     transition: all 0.3s ease; /* Smooth hover effect */
 }
 
 /* Hover effect: Change color to blue and apply a deeper shadow */
 .social-links a:hover {
     color: rgb(255, 255, 255);
-    background-color:#040404;
+    background-color:#040404b4;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
 }
 
