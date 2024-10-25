@@ -94,13 +94,17 @@ body {
 }
 
 #projects h2 {
+    background-color:  #fafafab7;
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 1.2;
     margin: 15px 0;
-    font-weight: 400;
-    color: #030303;
+    font-weight: 100;
+    color: #544a4a;
     margin-bottom: 20px; /* Space between heading and project cards */
+    padding: 10px 50px; /* Increased horizontal padding */
+    width: fit-content; /* Make the width wrap around the content */
+    border-radius: 50px; /* Smooth, pill-like rounding */
 }
 #projects h3 {
     font-family: 'Poppins', sans-serif;
@@ -228,6 +232,28 @@ h2 {
     font-weight: 400;
     color: #000000;
 }
+#contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically if needed */
+}
+
+#contacts h2 {
+    background-color: #fafafab7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin: 15px 0;
+    font-weight: 100;
+    color: #544a4a;
+    margin-bottom: 20px; /* Space between heading and project cards */
+    padding: 10px 50px; /* Increased horizontal padding */
+    width: fit-content; /* Make the width wrap around the content */
+    border-radius: 50px; /* Smooth, pill-like rounding */
+    position: relative;
+}
+
 
 /* Styling for social links */
 .social-links {
