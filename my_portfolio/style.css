@@ -11,7 +11,9 @@ body {
     background-attachment: fixed; /* Keeps the image static while scrolling */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     color: #070707;
+    
 }
+
 /* Header Styling */
 .header {
     max-width: 900px; /* Restricts header to a reasonable max size */
