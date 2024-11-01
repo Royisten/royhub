@@ -195,18 +195,17 @@ body {
         padding: 15px;/* Full width on smaller screens */
     }
 }
-
 /* Styling for GitHub buttons */
 .circle_B {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    height: 35px;
+    width: 30px; /* Adjusted width for a smaller button */
+    height: 30px; /* Adjusted height for a smaller button */
     border-radius: 50%; /* Makes the button round */
     background-color: #030303;
     color: #fffefe;
-    font-size: 21px;
+    font-size: 16px; /* Reduced font size for smaller button */
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
     transition: all 0.3s ease; /* Smooth hover effect */
@@ -216,11 +215,13 @@ body {
     color: #000000;
     background-color: #fafafa00;
 }
+
 /* Media query for smaller screens */
 @media (max-width: 480px) {
     .circle_B {
-        width: 80%; /* Use a percentage for width */
-        font-size: 0.9em; /* Slightly reduce font size */
+        width: 25px; /* Smaller width on small screens */
+        height: 25px; /* Smaller height on small screens */
+        font-size: 14px; /* Slightly reduced font size on small screens */
     }
 }
 
