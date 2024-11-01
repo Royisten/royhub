@@ -219,9 +219,9 @@ body {
 /* Media query for smaller screens */
 @media (max-width: 480px) {
     .circle_B {
-        width: 25px; /* Smaller width on small screens */
-        height: 25px; /* Smaller height on small screens */
-        font-size: 14px; /* Slightly reduced font size on small screens */
+        width: 25px !important; /* Smaller width on small screens */
+        height: 25px !important; /* Smaller height on small screens */
+        font-size: 20px !important; /* Slightly reduced font size on small screens */
     }
 }
 
