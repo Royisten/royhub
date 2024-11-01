@@ -4,7 +4,8 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px;
-    background-image: url('../img/sky01.jpg');
+    background-image: url('./img/sky01.jpg');
+
 
     background-size: cover; /* Ensure the image covers the entire background */
     background-position: center; /* Center the background image */
@@ -212,8 +213,8 @@ body {
 }
 
 .circle_B:hover {
-    color: #0e0e0e;
-    background-color:rgb(211, 211, 211)
+    color: #000000;
+    background-color: #fafafa00;
 }
 
 
