@@ -207,7 +207,7 @@ body {
     color: #070707;
     font-size: 16px; /* Reduced font size for smaller button */
     text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow effect */
     transition: all 0.3s ease; /* Smooth hover effect */
 }
 
