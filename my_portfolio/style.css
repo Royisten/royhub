@@ -206,7 +206,7 @@ body {
     border-radius: 50%; /* Makes the button round */
     background-color: #030303;
     color: #fffefe;
-    font-size: 20px;
+    font-size: 21px;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
     transition: all 0.3s ease; /* Smooth hover effect */
@@ -215,6 +215,14 @@ body {
 .circle_B:hover {
     color: #000000;
     background-color: #fafafa00;
+}
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+    .circle_B {
+        width: 30px; /* Adjust width for smaller screens */
+        height: 30px; /* Adjust height for smaller screens */
+        font-size: 22px; /* Adjust font size for smaller screens */
+    }
 }
 
 
