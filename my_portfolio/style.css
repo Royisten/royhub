@@ -203,8 +203,8 @@ body {
     width: 30px; /* Adjusted width for a smaller button */
     height: 30px; /* Adjusted height for a smaller button */
     border-radius: 50%; /* Makes the button round */
-    background-color: #030303;
-    color: #fffefe;
+    background-color: #03030300;
+    color: #070707;
     font-size: 16px; /* Reduced font size for smaller button */
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
@@ -212,8 +212,8 @@ body {
 }
 
 .circle_B:hover {
-    color: #000000;
-    background-color: #fafafa00;
+    color: #fffafa;
+    background-color: #060606;
 }
 
 /* Media query for smaller screens */
